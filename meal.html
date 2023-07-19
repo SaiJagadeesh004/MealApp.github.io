@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meal App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel ="stylesheet"  href="items.css" >
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+      <a class="navbar-brand" href="#" onclick="showPage('homePage')" >Meal App</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPage('myFavoriteMealsPage')">My Favorite Meals</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="homePage">
+      <h1 id="title">
+        Meal App
+      </h1>
+      <img src="./mealpic.jpg" alt="img not found" id="mealtime">
+      <h2>Search for a Meal:</h2>
+      <input type="text" id="searchInput" class="form-control" placeholder="Type to search...">
+      <ul id="searchResults"></ul>
+    </div>
+
+    <!-- Meal Detail Page -->
+    <div id="mealDetailPage" style="display: none;">
+      <h2 id="mealDetailName"></h2>
+      <img id="mealDetailImage" alt="Meal Image">
+      <h4>Instructions:</h4>
+      <p id="mealDetailInstructions"></p>
+      <button id="addToFavoritesBtn" class="btn btn-primary">Add to Favorites</button>
+    </div>
+
+    <!-- My Favorite Meals Page -->
+    <div id="myFavoriteMealsPage" style="display: none;">
+      <h2>My Favorite Meals:</h2>
+      <ul id="favoriteMealsList"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
