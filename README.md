@@ -1,6 +1,8 @@
 # MealApp.github.io
 Meal app contains all different kind of food recipes and the deatiled intructions for cooking every item.
 
+Click the link to open site : https://meal-api-71f445.netlify.app/
+
 Introducing the Meal App: A Feature-rich Meal Management Solution
 
 1. Simplified Meal Storage: The Meal App provides a user-friendly interface for storing and managing your meal information, allowing you to keep track of your favorite recipes and culinary discoveries.
